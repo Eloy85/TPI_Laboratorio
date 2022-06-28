@@ -8,3 +8,16 @@ Analisis del juego
       * (b)                       como entero               "b" es el numero impar random
       
 Proceso: Ingresamos al juego y nos va a dar un menu de 3 opciones, las opciones son: 1)Jugar, 2)Reglas del juego, 3)Salir
+Si elige la opcion :
+1) arranca la partida del juego, le pide al usuario que seleccione la opcion correcta que se guarda en la variable "eleccion", y en el juego va haber 2 numeros random "a" siendo par y "b" siendo impar ,dependiendo el numero que elija le va mostrar "si  es par  es correcto y si es impar incorecto"
+si selecciona un numero que no este en esas 2 opciones le va a decir "vuelva a jugar y elija bien"
+
+Si elige la opcion:
+2) estaran las reglas del juego que son para que identifiquen un numero par o impar 
+*un numero par es divisible por 2 y su resto da 0
+*los numeros pares son los que terminan en 0,2,4,6,8
+*un numero impar es divisible por 2 y su resto es disitinto de 0
+*los numeros impares  son los que terminan en 1,3,5,7,9
+si elige la opcion :
+3)Sale del juego, ingresando el numero 100
+
