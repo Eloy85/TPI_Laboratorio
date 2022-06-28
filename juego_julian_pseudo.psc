@@ -1,4 +1,23 @@
+Funcion Validacion(r,nivel,puntos)
+	Borrar Pantalla
+	si r == Verdadero Entonces
+		Mostrar "Correcto"
+		Mostrar "Pasas el Nivel: " ,nivel
+		Mostrar "Tenes ", puntos, " Puntos"
+		Leer n
+	SiNo si r == Falso entonces
+			Borrar Pantalla
+			Mostrar "Incorrecto"
+			Mostrar "Pasas el Nivel: " ,nivel
+			Mostrar "Tenes ", puntos, " Puntos"
+			Leer n
+		FinSi
+	FinSi
+FinFuncion
+
 Funcion menu()
+	nivel<-0
+	puntos<-0
 	Borrar Pantalla
 	Mostrar ""
 	Mostrar "Bienvenido a Fire"
@@ -10,7 +29,7 @@ Funcion menu()
 	Mostrar "Que deseas hacer?"
 	Leer eleccion
 	si eleccion==1 Entonces
-		jugar()
+		Level0(nivel,puntos)
 	SiNo
 		si eleccion==2 Entonces
 			como_jugar()
@@ -21,7 +40,7 @@ Funcion menu()
 		FinSi
 	FinSi
 FinFuncion
-Funcion jugar()
+Funcion Level0(nivel,puntos)
 	Borrar Pantalla
 	Mostrar ""
 	Mostrar "Estas en el aula del colegio y sentis una alarma que suena fuerte y muchos gritos afuera"
@@ -34,7 +53,132 @@ Funcion jugar()
 	Mostrar "a) tomas la mano de el primero que encuentras(no importa si tiene compañero)"
 	Mostrar "b) Sigues a la profesora solo"
 	Leer respuesta
+	si respuesta == "a" Entonces
+		puntos<-puntos+1
+		nivel<-nivel+1
+		r<-Verdadero
+	SiNo
+		puntos<-puntos-1
+		nivel<-nivel+1
+		r<-Falso
+	FinSi
+	Validacion(r,nivel,puntos)
+	Level1(nivel,puntos,respuesta)
 FinFuncion
+Funcion Level1(nivel,puntos,respuesta)
+		Borrar Pantalla
+		Mostrar ""
+		Mostrar "Tomaste la mano de un compañero y te dan muchas ganas de ir al baño"
+		Mostrar "Tu compañero te dice que no pero si no vas te haras encima."
+		Mostrar ""
+		Mostrar "Que haces?"
+		Mostrar ""
+		Mostrar "a) te haces encima pero sigues con tu compañero y el grupo"
+		Mostrar "b) Frenas en el baño y haces que tu compañero te espere afuera."
+	Leer respuesta
+	si respuesta == "a" Entonces
+		puntos<-puntos+1
+		nivel<-nivel+1
+		r<-Verdadero
+	SiNo
+		puntos<-puntos-1
+		nivel<-nivel+1
+		r<-Falso
+	FinSi
+	Validacion(r,nivel,puntos)
+	Level2(nivel,puntos,respuesta)
+FinFuncion
+Funcion Level2(nivel,puntos,respuesta)
+	Borrar Pantalla
+	Mostrar ""
+	Mostrar "Ves todas las puertas cerradas y con un tacho de basura delante de las puertas"
+	Mostrar "Detras de una de las puertas se escucha un ruido que no podes distinguir con claridad"
+	Mostrar "parece un chico gritando"
+	Mostrar ""
+	Mostrar "Que haces?"
+	Mostrar ""
+	Mostrar "a) mal"
+	Mostrar "b) bien"
+	Leer respuesta
+	si respuesta == "b" Entonces
+		puntos<-puntos+1
+		nivel<-nivel+1
+		r<-Verdadero
+	SiNo
+		puntos<-puntos-1
+		nivel<-nivel+1
+		r<-Falso
+	FinSi
+	Validacion(r,nivel,puntos)
+	Level3(nivel, puntos,respuesta)
+FinFuncion
+Funcion Level3(nivel,puntos,respuesta)
+	Borrar Pantalla
+	Mostrar ""
+	Mostrar "Ves una puerta cerrada sin canasto y escuchas un grito de una persona"
+	Mostrar ""
+	Mostrar "Que haces?"
+	Mostrar ""
+	Mostrar "a) mal"
+	Mostrar "b) Tocar la manija de la puerta y la puerta para ver si esta caliente"
+	Leer respuesta
+	si respuesta == "b" Entonces
+		puntos<-puntos+1
+		nivel<-nivel+1
+		r<-Verdadero
+	SiNo
+		puntos<-puntos-1
+		nivel<-nivel+1
+		r<-Falso
+	FinSi
+	Validacion(r,nivel,puntos)
+	Level4(nivel,puntos,respuesta)
+FinFuncion
+Funcion Level4(nivel,puntos,respuesta)
+	Borrar Pantalla
+	Mostrar ""
+	Mostrar "Ves la salida pero hay mucho humo en medio y no logras ver ni respirar con facilidad"
+	Mostrar ""
+	Mostrar "Que haces?"
+	Mostrar ""
+	Mostrar "a) mal"
+	Mostrar "b) Agachate y caminar en cuatro patas poniendo manos y rodillas en el suelo"
+	Leer respuesta
+	si respuesta == "b" Entonces
+		puntos<-puntos+1
+		nivel<-nivel+1
+		r<-Verdadero
+	SiNo
+		puntos<-puntos-1
+		nivel<-nivel+1
+		r<-Falso
+	FinSi
+	Validacion(r,nivel,puntos)
+	Level5(nivel,puntos,respuesta)
+FinFuncion
+Funcion Level5(nivel,puntos,respuesta)
+	Borrar Pantalla
+	Mostrar ""
+	Mostrar "Te quedas encerrado en la escuela y no hay mas salidas libres que sean seguras"
+	Mostrar ""
+	Mostrar "Que haces?"
+	Mostrar ""
+	Mostrar "a) Encerrarte en un cuarto lejos de donde empezo en incendio"
+	Mostrar "b) mal"
+	Leer respuesta
+	si respuesta == "a" Entonces
+		puntos<-puntos+1
+		nivel<-nivel+1
+		r<-Verdadero
+	SiNo
+		puntos<-puntos-1
+		nivel<-nivel+1
+		r<-Falso
+	FinSi
+	Validacion(r,nivel,puntos)
+	//	Level5()
+FinFuncion
+
 Funcion como_jugar()
 	Borrar Pantalla
 	Mostrar ""
@@ -65,5 +209,9 @@ Funcion salir()
 FinFuncion
 
 Algoritmo juego_escape
-menu()
+	menu()
 FinAlgoritmo
+
+//Funcion respuesta<-jugar2()
+
+//FinFuncion
