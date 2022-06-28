@@ -1,0 +1,10 @@
+Analisis del juego      
+      Datos de entrada           Tipo de dato               Descripcion
+      * ele_menu                  como entero               es la eleccion del menu del juego
+      * eleccion                  como entero               toma el numero que ingresa el usuario para despues compararlo
+      
+      Datos de salida            Tipo de dato               Descripcion
+      * (a)                       como entero               "a" es el numero par random
+      * (b)                       como entero               "b" es el numero impar random
+      
+Proceso: Ingresamos al juego y nos va a dar un menu de 3 opciones, las opciones son: 1)Jugar, 2)Reglas del juego, 3)Salir
