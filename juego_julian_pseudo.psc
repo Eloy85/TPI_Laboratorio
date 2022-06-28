@@ -27,11 +27,13 @@ Funcion jugar()
 	Mostrar "Estas en el aula del colegio y sentis una alarma que suena fuerte y muchos gritos afuera"
 	Mostrar "depronto una de las otras profes se asoma a tu aula y le dice a tu profesora que hay un incendio en el baño de mujeres"
 	Mostrar "tu profesora dice que hagan grupo con otro compañero, se tomen las manos, no se suelten y la sigan afuera"
-	Mostrar "Te levantas y no conseguis otro compañero para tomarle la mano"
+	Mostrar "Te levantas y no conseguis otro compañero para tomarle la mano."
 	Mostrar ""
+	Mostrar "Que haces?"
 	Mostrar ""
-	Mostrar ""
-	Mostrar ""
+	Mostrar "a) tomas la mano de el primero que encuentras(no importa si tiene compañero)"
+	Mostrar "b) Sigues a la profesora solo"
+	Leer respuesta
 FinFuncion
 Funcion como_jugar()
 	Borrar Pantalla
