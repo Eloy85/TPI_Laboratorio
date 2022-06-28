@@ -18,4 +18,4 @@ git status ##Ver el estado de los archivos creados o modificados
 git pull  ##Recibe todos los cambios que se hicieron en el archivo por tus compañeros
 
 
-.
+/
