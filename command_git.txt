@@ -1,4 +1,4 @@
-https://www.youtube.com/watch?v=HiXLkL42tMU
+﻿https://www.youtube.com/watch?v=HiXLkL42tMU
 https://virtualtec.frvm.utn.edu.ar/mod/page/view.php?id=7043
 https://virtualtec.frvm.utn.edu.ar/mod/resource/view.php?id=7220
 https://virtualtec.frvm.utn.edu.ar/pluginfile.php/11348/mod_resource/content/2/Integrador.pdf
@@ -16,3 +16,6 @@ git commit -m "Primer commit para guardar archivos explicativos a mis compañero
 git push	##Sube todos los cambios a Github. ATENCION!! te va a pedir usuario y contraseña, en usuario pone tu nombre de usuario pero en la contraseña pone tu token
 git status ##Ver el estado de los archivos creados o modificados
 git pull  ##Recibe todos los cambios que se hicieron en el archivo por tus compañeros
+
+
+.
