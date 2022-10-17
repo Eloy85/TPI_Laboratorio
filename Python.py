@@ -7,8 +7,10 @@
 ##    print("Es un dos")  ## Mostrar "Es un dos"
 ##else:                   ## Sino
 ##    print("Error")      ## Mostrar "Error"
-
+import os
+import random
 while True:
+    os.system("clear")
     print("")
     print("                                 Bienvenidos a JAME")
     print("")
@@ -38,8 +40,6 @@ while True:
         print("Selecciona una Opcion correcta")
         
         
-import random
-import os
 os.system("clear")
 print("")
 print(" APRENDEMOS LOS NUMEROS PAR E IMPAR ")
