@@ -1,6 +1,6 @@
 Analisis del Menu:
-  Datos de entrada:
-  Datos de salida:
+  Datos de entrada: Opcion seleccionada por el usuario
+  Datos de salida: Juego seleccionado, Sale del juego o muestra devuelta el menu con en mensaje de error.
   Proceso:
     Se muestra el menu con 5 opciones separadas por numeros.
     1) Juego uno
@@ -8,6 +8,6 @@ Analisis del Menu:
     3) Juego tres
     4) Juego cuatro
     x) Salir
-    Despues le pido al usuario que ingrese el numero de la opcion que quiera seleccionar. 
+    Despues le pido al usuario que ingrese la opcion que quiera seleccionar. 
     Ejemplo: Si presiona 1 le enviara al juego numero uno, si presiona x saldra del juego.
     Si selecciona una opcion que no este definida le muestra el menu nuevamente con un mensaje para que seleccione una opcion correcta, mostrandole tambien un ejemplo.
