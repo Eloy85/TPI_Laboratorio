@@ -1,0 +1,13 @@
+Analisis del Menu:
+  Datos de entrada:
+  Datos de salida:
+  Proceso:
+    Se muestra el menu con 5 opciones separadas por numeros.
+    1) Juego uno
+    2) Juego dos
+    3) Juego tres
+    4) Juego cuatro
+    x) Salir
+    Despues le pido al usuario que ingrese el numero de la opcion que quiera seleccionar. 
+    Ejemplo: Si presiona 1 le enviara al juego numero uno, si presiona x saldra del juego.
+    Si selecciona una opcion que no este definida le muestra el menu nuevamente con un mensaje para que seleccione una opcion correcta, mostrandole tambien un ejemplo.
