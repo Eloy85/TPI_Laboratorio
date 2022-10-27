@@ -1,4 +1,11 @@
 Analisis:
-  Datos de Entrada:
-  Datos de Salida:
-  Proceso:
+  - Datos de Entrada: 
+	Tipo de operación (suma, resta, multiplicación, división) (entero). 
+	Dificultad (fácil, medio, difícil) (entero). 
+	Resultado de cada operación (entero.
+  - Datos de Salida: 
+	Puntaje (entero). 
+	Puntaje total (entero).
+  - Proceso:
+El juego consiste en elegir entre cuatro categorías: suma, resta, multiplicación y división. Luego se elige la dificultad: fácil (operaciones entre números de 1 cifra), medio (operaciones entre números de hasta 2 cifras) y difícil (operaciones entre números de hasta 3 cifras).
+Luego, se mostrará en pantalla una operación, y el usuario deberá ingresar el resultado. Si es correcto, sumará puntos (10, 20 o 30, dependiendo de la dificultad elegida). Se juegan 10 rondas, es decir 10 operaciones, y al finalizar se muestra el puntaje total obtenido y se le pregunta al usuario si desea volver a jugar.
