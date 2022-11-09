@@ -1,0 +1,28 @@
+Datos de Entrada: Elecciones del Usuario
+
+Datos de Salida: Ir al Juego, Ir a Como Jugar, Salir.
+
+Analisis:
+	Juego: Comenzara el juego contando una historia para darle ambientacion al juego, luego se le dara a elegir dos opciones para tomar en cuenta que haria en 
+	caso de un incendio. 
+	Si la opcion es correcta se continuara contando la historia y presentandoles otras dos opciones para que continue jugando hasta que se termine el juego.
+	Si la opcion es incorrecta se le dira al usuario porque es incorrecta y terminara el juego mostrandole la puntuacion que consiguio
+	
+	Como_Jugar:Si se elige la opcion de como jugar le aparecera una explicacion de como jugar y al final la opcion de que presionar para volver al menu
+
+	Salir:Si se elige la opcion de Salir sale del juego y vuelve al menu principal
+
+Pseudocodigo:
+
+
+ver u oler humo avisar a un profesor
+si se escucha la alarma seguir las instrucciones de los profesores
+si estas en el patio no volver a ingresar
+salir del aula sin llevarte nada que pueda estorbar a el o a los demas
+si falta un compañero avisar a un profesor
+si hay una papelera delante de la puerta no volver a entrar (significa que esta vacio)
+no volver al aula a buscar nada ni avisar a nadie
+caminar en fila pegado a la pared sin correr, gritar ni dar empujones
+no separarse del grupo ni siquiera cuando ya esten afuera
+no permanecer junto a la puerta o pararte en medio.
+
