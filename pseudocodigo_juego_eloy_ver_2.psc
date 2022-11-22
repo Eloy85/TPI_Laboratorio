@@ -1,22 +1,11 @@
-Funcion a <- valorA(dificultad)
+Funcion num <- valorNum(num, dificultad)
 	Segun dificultad Hacer
 		1:
-			a = Aleatorio(1, 9)
+			num = Aleatorio(1, 9)
 		2:
-			a = Aleatorio(1, 99)
+			num = Aleatorio(1, 99)
 		3:
-			a = Aleatorio(1, 999)
-	FinSegun
-Fin Funcion
-
-Funcion b <- valorB(dificultad)
-	Segun dificultad Hacer
-		1:
-			b = Aleatorio(1, 9)
-		2:
-			b = Aleatorio(1, 99)
-		3:
-			b = Aleatorio(1, 999)
+			num = Aleatorio(1, 999)
 	FinSegun
 Fin Funcion
 
@@ -62,8 +51,8 @@ Algoritmo MateMata
 			1: //suma
 				i = 0
 				Para i=1 Hasta 10 Hacer				
-					a<-valorA(nivel)
-					b<-valorB(nivel)
+					a<-valorNum(a, nivel)
+					b<-valorNum(b, nivel)
 					Escribir "*** Pregunta ", i, " de 10 ***"
 					Escribir a, " + ", b, " ="
 					Leer resultado
@@ -77,11 +66,11 @@ Algoritmo MateMata
 			2: //resta
 				i = 0
 				Para i=1 Hasta 10 Hacer
-					a<-valorA(nivel)
-					b<-valorB(nivel)
+					a<-valorNum(a, nivel)
+					b<-valorNum(b, nivel)
 					Mientras a<b Hacer
-						a<-valorA(nivel)
-						b<-valorB(nivel)
+						a<-valorNum(a, nivel)
+						b<-valorNum(b, nivel)
 					FinMientras
 					Escribir "*** Pregunta ", i, " de 10 ***"
 					Escribir a, " - ", b, " ="
@@ -96,8 +85,8 @@ Algoritmo MateMata
 			3: //multiplicacion
 				i = 0
 				Para i=1 Hasta 10 Hacer				
-					a<-valorA(nivel)
-					b<-valorB(nivel)
+					a<-valorNum(a, nivel)
+					b<-valorNum(b, nivel)
 					Escribir "*** Pregunta ", i, " de 10 ***"
 					Escribir a, " x ", b, " ="
 					Leer resultado
@@ -111,11 +100,11 @@ Algoritmo MateMata
 			4: //division
 				i = 0
 				Para i=1 Hasta 10 Hacer
-					a<-valorA(nivel)
-					b<-valorB(nivel)
+					a<-valorNum(a, nivel)
+					b<-valorNum(b, nivel)
 					Mientras a%b<>0 Hacer
-						a<-valorA(nivel)
-						b<-valorB(nivel)
+						a<-valorNum(a, nivel)
+						b<-valorNum(b, nivel)
 					FinMientras
 					Escribir "*** Pregunta ", i, " de 10 ***"
 					Escribir a, " / ", b, " ="
