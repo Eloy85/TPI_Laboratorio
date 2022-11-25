@@ -77,7 +77,7 @@ while salir != "n":
             b = valorNum(b, nivel)
             print("*** Pregunta", i+1, "de 10 ***")
             print(a, "+", b, "=")
-            resultado = int()
+            resultado = 0
             while resultado != a+b:
                 try:
                     resultado = int(input())
@@ -100,7 +100,7 @@ while salir != "n":
                 b = valorNum(b, nivel)
             print("*** Pregunta", i+1, "de 10 ***")
             print(a, "-", b, "=")
-            resultado = int()
+            resultado = int(9999999)
             while resultado != a - b:
                 try:
                     resultado = int(input())
@@ -120,7 +120,7 @@ while salir != "n":
             b = valorNum(b, nivel)
             print("*** Pregunta", i+1, "de 10 ***")
             print(a, "x", b, "=")
-            resultado = int()
+            resultado = 0
             while resultado != a * b:
                 try:
                     resultado = int(input())
@@ -143,7 +143,7 @@ while salir != "n":
                 b = valorNum(b, nivel)
             print("*** Pregunta", i+1, "de 10 ***")
             print(a, "/", b, "=")
-            resultado = int()
+            resultado = 0
             while resultado != a / b:
                 try:
                     resultado = int(input())
