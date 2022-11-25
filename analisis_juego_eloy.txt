@@ -1,11 +1,23 @@
 Analisis:
   - Datos de Entrada: 
-	Tipo de operación (suma, resta, multiplicación, división) (entero). 
-	Dificultad (fácil, medio, difícil) (entero). 
-	Resultado de cada operación (entero.
+	tipoOperación (1-suma, 2-resta, 3-multiplicación, 4-división) (entero). 
+	nivel (1-fácil, 2-medio, 3-difícil) (entero). 
+	resultado (entero).
+	salir (caracter).
+	nombre (caracter).
   - Datos de Salida: 
-	Puntaje (entero). 
-	Puntaje total (entero).
+	puntaje (entero). 
+	tablaPosiciones (caracter, entero).
   - Proceso:
 El juego consiste en elegir entre cuatro categorías: suma, resta, multiplicación y división. Luego se elige la dificultad: fácil (operaciones entre números de 1 cifra), medio (operaciones entre números de hasta 2 cifras) y difícil (operaciones entre números de hasta 3 cifras).
 Luego, se mostrará en pantalla una operación, y el usuario deberá ingresar el resultado. Si es correcto, sumará puntos (10, 20 o 30, dependiendo de la dificultad elegida). Se juegan 10 rondas, es decir 10 operaciones, y al finalizar se muestra el puntaje total obtenido y se le pregunta al usuario si desea volver a jugar.
+
+Utilizo una función que va a generar un número aleatorio en un rango que va a depender del nivel de dificultad seleccionado. Para fácil, el rango es entre 1 y 9, para medio es entre 1 y 99, y para difícil es entre 1 y 999. Dichos números aleatorios son los operandos que se van a utilizar para cada operación que el usuario deba resolver.
+
+También utilizo otra función para el puntaje obtenido en cada ejercicio resuelto. De acuerdo al nivel seleccionado, cada respuesta correcta sumará 10 (fácil), 20 (medio) o 30 (difícil) puntos.
+
+Ya comenzando el juego, se le da la bienvenida al usuario y se le pide que seleccione el tipo de operación con la que jugará la ronda (suma, resta, multiplicación o división), debiendo ingresar un número entre 1 y 4. Con un ciclo while, se impide que el usuario ingrese un caracter o un número mayor o menor que ese rango. Luego se le pide que seleccione el nivel de dificultad entre fácil, medio o difícil, otra vez debiendo ingresar la opción elegida con un número entre 1 y 3. Nuevamente se utiliza un ciclo while para acotar la selección entre esas tres opciones.
+
+A continuación, se le mostrará al usuario una operación matemática entre dos números enteros aleatorios, y deberá ingresar el resultado. Si es correcto, se muestra un mensaje informando esto y la cantidad de puntos obtenidos. Si es incorrecto, se muestra el resultado real. Esto se repite 10 veces, y al finalizar se muestra el total de puntos obtenidos, y se le pregunta al usuario si desea volver a jugar. Esto funciona con un ciclo while escrito al principio del programa. En caso de que desee volver a jugar, se le volverá a preguntar el tipo de operación con la que va a jugar y el nivel de dificultad. El puntaje obtenido hasta el momento no se borra, por lo que al finalizar la nueva ronda tendrá acumulados los puntos anteriores con los obtenidos recientemente. El usuario tiene infinitas posibilidades de volver a jugar.
+
+Cuando el usuario seleccione que no desea volver a jugar, se le pedirá que ingrese su nombre. A continuación se le mostrará una tabla de posiciones en donde verá su nombre junto con el total de puntos obtenidos, junto con otros jugadores ficticios, ordenados según el puntaje de cada uno, de mayor a menor. El juego volverá al menú principal de selección de juegos.
